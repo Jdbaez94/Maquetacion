@@ -7,7 +7,7 @@ Sistema de gestión de vuelos *mobile-first* para la aerolínea **ACME AIR**. Pr
 - **Exclusivo para móviles**: Bloqueo activo en pantallas > 767px  
 - **Fidelidad de diseño**: Pixel-perfect según mockups de referencia  
 - **Flujo completo**: 7 vistas interconectadas con navegación funcional  
-- **Protección dual**: CSS + JavaScript para garantizar uso *mobile-only*  
+- **Protección dual**: CSS  para garantizar uso *mobile-only*  
 
 ## 🛠 Tecnologías  
 HTML5 · CSS3 · 

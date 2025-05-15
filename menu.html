@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Principal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .opcion {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      margin: 12px 0;
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .opcion img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .opcion span {
+      flex-grow: 1;
+      font-size: 16px;
+    }
+
+    .opcion .flecha {
+      font-size: 20px;
+      color: #888;
+    }
+
+    .logout-link {
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #888;
+    }
+
+    .logout-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="menu-page">
+  <div class="header">
+    <img src="logo.png" alt="ACME AIR" class="logo" />
+    <div class="texto-logo">
+      <h1 class="titulo-logo">ACME AIR</h1>
+      <p class="subtitulo-logo">Flying to your dreams</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>¡Hola señor Javier Duarte</span>!</h2>
+    <p style="text-align: center;">¿Qué quieres hacer?</p>
+
+    <a href="buscar_vuelos.html" class="opcion">
+      <img src="buscar_v.png" alt="Buscar vuelos">
+      <span>Buscar vuelos</span>
+      <span class="flecha">›</span>
+    </a>
+
+    <a href="check_in.html" class="opcion">
+      <img src="check.png" alt="Check In">
+      <span>Check In</span>
+      <span class="flecha">›</span>
+    </a>
+
+    <a href="mis_vuelos.html" class="opcion">
+      <img src="descarga.png" alt="Mis Vuelos">
+      <span>Mis Vuelos</span>
+      <span class="flecha">›</span>
+    </a>
+  </div>
+
+  <a href="index.html" class="logout-link">Cerrar Sesión</a>
+
+  <script>
+    const nombre = localStorage.getItem('nombre') || 'John Doe';
+    document.getElementById('nombreUsuario').textContent = nombre;
+  </script>
+</body>
+</html>

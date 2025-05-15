@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Búsqueda de Vuelos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="ACME AIR" class="logo" />
+  </div>
+
+  <div class="card">
+    <div class="trip-type">
+      <input type="checkbox" id="one-way">
+      <form action="">
+        <label for="one-way">Solo ida</label>
+      </form>
+      
+    </div>
+    <h2>Búsqueda de Vuelos</h2>
+    <form action="vuelos_disponibles.html">
+      <input type="text" placeholder="Origen" required />
+      <input type="text" placeholder="Destino" required />
+      <input type="date" placeholder="salida" required />
+      <input type="date" placeholder="regreso" required />
+      <button type="submit">Buscar vuelos</button>
+    </form>
+    <a href="menu.html" class="link">Volver</a>
+  </div>
+</body>
+</html>

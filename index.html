@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <div class="header">
+    <img src="logo.png" alt="ACME AIR" class="logo">
+    <div class="texto-logo">
+      <h1 class="titulo-logo">ACME AIR</h1>
+      <p class="subtitulo-logo">Flying to your dreams</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Iniciar Sesión</h2>
+    <form action="registro.html">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="datos" name="datos">
+        <label for="datos">Recordar mis datos</label>
+      </div>
+
+      <input type="submit" value="INGRESAR" class="btn-azul">
+    </form>
+    <p><a href="./registro.html" class="link">Crear cuenta</a></p>
+    <p><a href="./recuperar_contraseña.html" class="link">¿Has olvidado tu contraseña?</a></p>
+  </div>
+</body>
+</html>

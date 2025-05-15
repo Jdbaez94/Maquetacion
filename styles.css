@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    width: 100%;
+    background: linear-gradient(to right, #d14bb9, #418ad9);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    max-height: 60px;
+  }
+  
+  
+  .texto-logo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .titulo-logo {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .subtitulo-logo {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    appearance: none;
+    background: white url('dropdown-arrow.png') no-repeat right 10px center;
+    background-size: 12px;
+  }
+  
+  .checkbox-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+  }
+  
+  .btn-azul,
+  button.btn-azul {
+    width: 100%;
+    background-color: #2196F3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .btn-azul:hover {
+    background-color: #1976d2;
+  }
+  
+  .link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* VISTA ESCRITORIO: no soportada */
+  @media (min-width: 768px) {
+    body {
+      display: none;
+    }
+  
+    body::before {
+      content: "Página no compatible en escritorio 😅\1\A Por favor abre esta página desde un dispositivo móvil.";
+      white-space: pre-wrap;
+      display: block;
+      text-align: center;
+      padding: 40px;
+      font-size: 18px;
+      color: #444;
+      background-image: url('no-soportado.png');
+      background-size: 150px;
+      background-repeat: no-repeat;
+      background-position: center 20px;
+      padding-top: 180px;
+    }
+  /* Ajuste específico para formulario de login */
+  .card form {
+    text-align: left;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin: 0;
+  }
+   }

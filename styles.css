@@ -117,26 +117,28 @@ body {
     text-decoration: underline;
   }
   
-  /* VISTA ESCRITORIO: no soportada */
   @media (min-width: 768px) {
-    body {
-      display: none;
-    }
-  
-    body::before {
-      content: "Página no compatible en escritorio 😅\1\A Por favor abre esta página desde un dispositivo móvil.";
-      white-space: pre-wrap;
-      display: block;
-      text-align: center;
-      padding: 40px;
-      font-size: 18px;
-      color: #444;
-      background-image: url('no-soportado.png');
-      background-size: 150px;
-      background-repeat: no-repeat;
-      background-position: center 20px;
-      padding-top: 180px;
-    }
+  body > * {
+    display: none !important;
+  }
+
+  body::before {
+    content: "😅 Esta página solo está disponible para dispositivos móviles.\A Por favor accede desde tu teléfono.";
+    display: block;
+    white-space: pre-wrap;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 18px;
+    color: red;
+    background-color: #fff;
+    background-image: url('no_soportado.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 150px;
+    padding-top: 200px;
+  }
+}
+
   /* Ajuste específico para formulario de login */
   .card form {
     text-align: left;
@@ -156,4 +158,4 @@ body {
   .checkbox-container input[type="checkbox"] {
     margin: 0;
   }
-   }
+   

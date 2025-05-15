@@ -10,8 +10,8 @@ Sistema de gestión de vuelos *mobile-first* para la aerolínea **ACME AIR**. Pr
 - **Protección dual**: CSS + JavaScript para garantizar uso *mobile-only*  
 
 ## 🛠 Tecnologías  
-HTML5 · CSS3 · JavaScript (ES6)  
-Media Queries · CSS Grid · Flexbox  
+HTML5 · CSS3 · 
+
 
 ## 📁 Estructura del Proyecto
 

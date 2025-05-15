@@ -11,8 +11,8 @@ Sistema de gestión de vuelos mobile-first para la aerolínea ACME AIR. Proyecto
 
 ## 🛠 Tecnologías
 ```plaintext
-HTML5 · CSS3 · JavaScript (ES6)
-Media Queries · CSS Grid · Flexbox
+HTML5 · CSS3
+
 
 ---
 
